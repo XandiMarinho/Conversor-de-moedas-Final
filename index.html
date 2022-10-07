@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Moeda</h1>
+        </header>
+        <main>
+            <label>
+                Converter <b>de</b>
+                <select id="select-converter-de">
+                    <option>R$ Real</option>
+                    <option>₿ Bitcoin</option>
+                    <option>$ Dólar Americano</option>
+                    <option>€ Euro</option>
+                </select>
+            </label>
+            <label>
+                Converter <b>para</b>
+                <select id="select-converter-para">
+                    <option>$ Dólar Americano</option>
+                    <option>₿ Bitcoin</option>                    
+                    <option>€ Euro</option>
+                    <option>R$ Real</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input type="number" id="initial-input" placeholder="Insira o Valor">
+            </label>
+            <button type="button" id="button-calcular">Calcular</button>
+        </main>
+        <sector>
+            <div class="container-sector">
+                <img src="./assets/brasil.png" id="initial-img">
+                <p class="text-sector" id="initial-currency">Real</p>
+                <p class="text-value-sector" id="initial-value">R$</p>
+            </div>
+            <img class="arrow-img" src="./assets/arrow.png">
+            <div>
+                <img src="./assets/eua.jpg" id="target-img">
+                <p class="text-sector" id="target-currency">Dólar Americano</p>
+                <p class="text-value-sector" id="target-currency-value"><b>$</b></p>
+            </div>
+        </sector>
+    </div>
+
+</body>
+<script src="./scripts.js">
+</script>
+</html>
